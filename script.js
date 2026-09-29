@@ -1,0 +1,1 @@
+// CCT360 Lab 2 - JavaScript
