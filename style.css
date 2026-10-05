@@ -1,1 +1,220 @@
-/* CCT360 Lab 2 - Styles */
+//* Basic page style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1e8;
+    color: #24332b;
+    line-height: 1.6;
+}
+
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.hero-text {
+    position: absolute;
+    left: 10%;
+    bottom: 90px;
+    width: 550px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.hero-text h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 5px 0 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+
+/* Main sections */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 40px;
+}
+
+.section-title {
+    color: #a45c40;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin: 10px 0 20px;
+}
+
+.section > p {
+    max-width: 700px;
+}
+
+
+/* Part 1 */
+#answerButton {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    background-color: #314f3c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#answerButton:hover {
+    background-color: #456b53;
+}
+
+#answer {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e4e7dc;
+    border-left: 4px solid #a45c40;
+}
+
+
+/* Part 2 */
+.journey-section {
+    max-width: none;
+    background-color: #24332b;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#journeyBox {
+    position: relative;
+    margin-top: 40px;
+    min-height: 420px;
+}
+
+#journeyImage {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+#journeySteps {
+    display: none;
+    min-height: 420px;
+    padding: 60px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b2822;
+}
+
+.step {
+    width: 20%;
+    text-align: center;
+}
+
+.step h3 {
+    color: #d79a6b;
+    font-size: 22px;
+}
+
+.step p {
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #d79a6b;
+}
+
+
+/* Part 3 */
+.instruction {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#river {
+    position: relative;
+    height: 600px;
+    margin-top: 35px;
+    overflow: hidden;
+
+    background-image: url("images/salmon-river-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 4px;
+}
+
+/* Slightly soften the background */
+#river::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 35, 30, 0.12);
+}
+
+#movingSalmon {
+    position: absolute;
+    width: 170px;
+
+    /* starting position */
+    right: 60px;
+    bottom: 60px;
+
+    z-index: 2;
+}
+
+#finish {
+    position: absolute;
+    left: 35px;
+    top: 40px;
+
+    padding: 8px 14px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #24332b;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+#successMessage {
+    display: none;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #a45c40;
+}
+
+
+/* Footer */
+footer {
+    background-color: #18251f;
+    color: #d8ded9;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}* CCT360 Lab 2 - Styles */

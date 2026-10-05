@@ -4,16 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCT360 Lab 2</title>
+
+    <title>Salmon Run</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main>
-        <!-- Interactive webpage content will go here -->
-    </main>
+    <!-- Introduction -->
+    <header class="hero">
+
+        <img src="images/salmon-run.jpg" alt="Salmon swimming upstream">
+
+        <div class="hero-text">
+            <h1>The Salmon Run</h1>
+
+            <h2>A Journey Back Home</h2>
+
+            <p>
+                Every year, salmon leave the ocean and travel back into
+                freshwater. Their journey upstream is one of the most
+                interesting migrations in nature.
+            </p>
+        </div>
+
+    </header>
+
+
+    <!-- Part 1 -->
+    <section class="section">
+
+        <p class="section-title">01 / WHY?</p>
+
+        <h2>Why do salmon swim upstream?</h2>
+
+        <p>
+            Salmon swim against strong currents and travel long distances
+            during their migration. Why do they make this difficult journey?
+        </p>
+
+        <button id="answerButton">Reveal Answer</button>
+
+        <div id="answer">
+            <h3>They return to freshwater to reproduce.</h3>
+
+            <p>
+                Adult salmon return to spawning areas in freshwater,
+                often close to where they were born. They lay their eggs
+                there and begin the next generation of salmon.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Part 2 -->
+    <section class="section journey-section">
+
+        <p class="section-title">02 / THE JOURNEY</p>
+
+        <h2>Where do they go?</h2>
+
+        <p>
+            Move your mouse over the image to see the main stages
+            of a salmon's migration.
+        </p>
+
+        <div id="journeyBox">
+
+            <img
+                id="journeyImage"
+                src="images/salmon-jump.jpg"
+                alt="Salmon jumping through moving water"
+            >
+
+            <div id="journeySteps">
+
+                <div class="step">
+                    <h3>Ocean</h3>
+                    <p>Salmon spend part of their adult lives in the ocean.</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">
+                    <h3>River</h3>
+                    <p>They leave the ocean and enter freshwater rivers.</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">
+                    <h3>Upstream</h3>
+                    <p>They swim against the current and pass many obstacles.</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">
+                    <h3>Spawning Ground</h3>
+                    <p>They reach their spawning area and reproduce.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Part 3 -->
+    <section class="section challenge-section">
+
+        <p class="section-title">03 / THE CHALLENGE</p>
+
+        <h2>Can you help the salmon get home?</h2>
+
+        <p>
+            The journey upstream can be difficult. Salmon have to swim
+            against the current and sometimes jump over waterfalls
+            and other obstacles.
+        </p>
+
+        <p class="instruction">
+            Press <strong>S</strong> to help the salmon jump upstream.
+        </p>
+
+        <div id="river">
+
+            <img
+                id="movingSalmon"
+                src="images/salmon-move.jpg"
+                alt="Salmon"
+            >
+
+            <p id="finish">Spawning Ground</p>
+
+        </div>
+
+        <p id="successMessage">
+            The salmon made it home!
+        </p>
+
+    </section>
+
+
+    <footer>
+        <p>CCT360 — Lab 2: Events in Motion</p>
+    </footer>
+
 
     <script src="script.js"></script>
 
